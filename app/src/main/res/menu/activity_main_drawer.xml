@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <group android:id="@+id/grp1" android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_camera"
+            android:icon="@android:drawable/ic_menu_info_details"
+            android:title="درباره ما" />
+        </group >
+        <group android:id="@+id/grp2" android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_gallery"
+            android:icon="@android:drawable/ic_menu_call"
+            android:title="تماس با ما" />
+        </group>
+        <group android:id="@+id/grp3" android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_slideshow"
+            android:icon="@android:drawable/ic_menu_edit"
+            android:title="بلاگ" />
+        </group>
+        <group android:id="@+id/grp4" android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_manage"
+            android:icon="@android:drawable/ic_menu_help"
+            android:title="وبسایت ازمابپرس" />
+        </group>
+        <group android:id="@+id/grp5" android:checkableBehavior="single">
+            <item
+                android:id="@+id/nav_insta"
+                android:icon="@android:drawable/ic_menu_info_details"
+                android:title="ما را در اینستاگرام دنبال کنید" />
+        </group>
+    </group>
+
+
+
+</menu>

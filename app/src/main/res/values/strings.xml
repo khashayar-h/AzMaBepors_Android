@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Azmabepors</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="font">fonts/yekan.ttf</string>
+    <string name="action_settings">Settings</string>
+    <string name="warning">\nلطفا برای دریافت پاسخ سوال خود حتما قسمت اسپم(SPAM)ایمیل خود را نیز چک کنید</string>
+</resources>

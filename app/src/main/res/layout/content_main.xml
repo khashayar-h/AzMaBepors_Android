@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.azmabepors.android.MainActivity"
+    tools:showIn="@layout/app_bar_main">
+
+    <HorizontalScrollView
+        android:layout_height="0dp"
+        android:layout_width="0dp"
+        app:layout_constraintRight_toLeftOf="parent"
+        tools:layout_constraintTop_creator="1"
+        tools:layout_constraintRight_creator="1"
+        tools:layout_constraintBottom_creator="1"
+        app:layout_constraintBottom_toTopOf="parent"
+        tools:layout_constraintLeft_creator="1"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+        <ScrollView
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            tools:layout_constraintTop_creator="1"
+            tools:layout_constraintRight_creator="1"
+            tools:layout_constraintBottom_creator="1"
+            android:layout_marginStart="8dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:layout_marginEnd="8dp"
+            app:layout_constraintRight_toRightOf="parent"
+            android:layout_marginTop="8dp"
+            tools:layout_constraintLeft_creator="1"
+            android:layout_marginBottom="8dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:layout_constraintTop_creator="1"
+        tools:layout_constraintRight_creator="1"
+        tools:layout_constraintBottom_creator="1"
+        android:layout_marginStart="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginEnd="8dp"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginTop="8dp"
+        tools:layout_constraintLeft_creator="1"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp">
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        tools:layout_constraintTop_creator="1"
+        tools:layout_constraintRight_creator="1"
+
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginTop="8dp"
+        tools:layout_constraintLeft_creator="1"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+>
+
+        <EditText
+            android:id="@+id/edt1"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@layout/my_edit_text_border"
+            android:hint="ایمیل شما : (جهت ارسال پاسخ سوال)"
+            tools:layout_editor_absoluteX="8dp"
+            tools:layout_editor_absoluteY="0dp" />
+    </LinearLayout>
+
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:id="@+id/linearLayout"
+            android:layout_marginTop="6dp"
+            tools:layout_constraintBottom_creator="1"
+            app:layout_constraintBottom_toBottomOf="@+id/linearLayout2"
+            tools:layout_constraintLeft_creator="1"
+            android:layout_marginBottom="6dp"
+            app:layout_constraintLeft_toLeftOf="@+id/linearLayout2">
+
+            <Spinner
+                android:id="@+id/spn_lesson"
+                android:layout_width="match_parent"
+                android:background="@layout/my_edit_text_border"
+                android:layout_height="50dp"
+                android:layout_marginRight="3.5dp"
+                android:layout_weight=".5"></Spinner>
+
+            <Spinner
+                android:id="@+id/spn_major"
+                android:layout_width="match_parent"
+                android:background="@layout/my_edit_text_border"
+                android:layout_marginLeft="3.5dp"
+                android:layout_height="50dp"
+                android:layout_weight=".5"></Spinner>
+        </LinearLayout>
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    tools:layout_constraintTop_creator="1"
+    tools:layout_constraintLeft_creator="1"
+    app:layout_constraintLeft_toLeftOf="parent"
+    app:layout_constraintTop_toTopOf="@+id/linearLayout">
+
+    <EditText
+        android:id="@+id/edt2"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:allowUndo="false"
+        android:background="@layout/my_edit_text_border"
+        android:hint="سوال شما : "
+        tools:layout_editor_absoluteX="8dp"
+        tools:layout_editor_absoluteY="0dp" />
+
+    <Button
+        android:id="@+id/btn_choose"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="انتخاب تصویر سوال"
+        android:layout_marginTop="7dp"
+        android:textColor="#ffffff"
+        android:background="@color/colorPrimary"
+        tools:layout_editor_absoluteX="8dp"
+        tools:layout_editor_absoluteY="0dp" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="5dp"
+        android:gravity="center"
+        android:id="@+id/txtfile"/>
+
+    <Button
+        android:id="@+id/sendbtn"
+        android:layout_width="match_parent"
+        android:textColor="#ffffff"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="7dp"
+        android:background="@color/colorPrimary"
+        android:text="ارسال سوال"
+        tools:layout_editor_absoluteX="8dp"
+        tools:layout_editor_absoluteY="0dp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#FF0000"
+        android:id="@+id/caution"
+        android:layout_marginBottom="10dp"
+        android:textSize="15dp"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:text= "@string/warning"/>
+</LinearLayout>
+
+    </LinearLayout>
+        </ScrollView>
+
+</android.support.constraint.ConstraintLayout>
